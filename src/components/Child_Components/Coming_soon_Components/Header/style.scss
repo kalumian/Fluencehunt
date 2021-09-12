@@ -1,0 +1,79 @@
+.Coming_Soon .coming-soon-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -3%;
+  position: relative;
+
+  & .waves {
+    overflow: hidden;
+    width: 100%;
+    & img {
+      width: 100%;
+    }
+  }
+  & .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  & .logo {
+    width: 300px;
+    & img {
+      width: 100%;
+    }
+  }
+  & .info-page {
+    text-align: center;
+    margin-top: 40px;
+  }
+  & h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 38px;
+    font-weight: 700;
+    color: $secondary-color;
+    @media (max-width: $m) {
+      font-size: 33px;
+    }
+  }
+  & p {
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 32px auto 0 auto;
+    width: 60%;
+    color: $secondary-color;
+    @media (max-width: $lx) {
+      width: 70%;
+    }
+    @media (max-width: $l) {
+      left: 80%;
+    }
+    @media (max-width: $m) {
+      left: 95%;
+      font-size: 14px;
+    }
+  }
+  & .circle1 {
+    left: 17%;
+    position: absolute;
+    @media (max-width: $l) {
+      left: 7%;
+    }
+    @media (max-width: $m) {
+      bottom: -20%;
+      left: 7%;
+    }
+    @media (max-width: $s) {
+      display: none;
+    }
+  }
+  & .wave2 {
+    position: absolute;
+    right: 7%;
+    bottom: -31%;
+    @media (max-width: $l) {
+      display: none;
+    }
+  }
+}

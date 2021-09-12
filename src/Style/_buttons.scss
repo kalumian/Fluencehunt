@@ -1,0 +1,30 @@
+// General Style Contain Button
+%btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  transition: $rate-trans;
+}
+%btn-main {
+  @extend %btn;
+  background-color: $main-color;
+}
+%btn-sec {
+  @extend %btn;
+  background-color: $secondary-color;
+}
+%btn-dark {
+  @extend %btn;
+  background-color: $dark-color;
+}
+%btn-circle {
+  box-shadow: 0 6px 30px 0 rgb(0 0 0 / 8%);
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  background: $main-color;
+  transition: $rate-trans;
+}

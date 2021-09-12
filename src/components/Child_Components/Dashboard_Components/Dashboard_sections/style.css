@@ -1,0 +1,149 @@
+/* --------------------------------  Dashboard Sections --------------------------------*/
+
+.Dashboard .dashboard-content {
+  display: flex;
+  flex-direction: column;
+  width: 84.5%;
+}
+@media (max-width: 944px) {
+  .Dashboard .dashboard-content {
+    width: 100%;
+  }
+}
+
+.Dashboard .dashboard-sections {
+  -webkit-box-shadow: inset 0px 69px 48px -79px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: inset 0px 69px 48px -79px rgba(0, 0, 0, 0.17);
+  box-shadow: inset 0px 69px 48px -79px rgba(0, 0, 0, 0.17);
+  padding: 0px 50px 0 30px;
+}
+
+/* --------------------------------  Dashboard Items --------------------------------*/
+
+.Dashboard .dashboard-sections .title {
+  font-size: 16px;
+  color: #2d3355;
+  margin: 50px 0;
+}
+@media (max-width: 768px) {
+  .Dashboard .dashboard-sections .title {
+    font-size: 14px;
+    margin: 25px 0;
+  }
+}
+@media (max-width: 400px) {
+  .Dashboard .dashboard-sections .title {
+    font-size: 11px;
+  }
+}
+
+.dashboard_item_content .fas {
+  color: rgb(0, 173, 0);
+  padding-right: 6px;
+  background-color: rgb(255, 255, 255);
+}
+.dashboard_item_content p {
+  color: #7b7b7b;
+  line-height: 2.4;
+}
+@media (max-width: 768px) {
+  .dashboard_item_content p {
+    display: none;
+  }
+}
+
+/* -------------------------------- Tabs --------------------------------*/
+.Dashboard .tab ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 35%;
+  border-bottom: 1px solid #7b7b7bd3;
+}
+@media (max-width: 768px) {
+  .Dashboard .tab ul {
+    width: 100%;
+  }
+}
+.Dashboard .tab li {
+  padding: 18px 0;
+  font-weight: 700;
+  color: #7b7b7bd3;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+.Dashboard .tab li::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: -1px;
+  left: 0;
+  background-color: var(--main-color);
+  transition: 0.3s;
+}
+
+.Dashboard .tab li:hover::after,
+.Dashboard .tab li.active::after {
+  width: 100%;
+}
+.Dashboard .tab li:hover,
+.Dashboard .tab li.active {
+  color: var(--main-color);
+}
+
+/*-------------------------------- Data Board --------------------------------*/
+.dashboard_item .container-data-board {
+  padding: 40px 80px;
+}
+
+@media (max-width: 768px) {
+  .dashboard_item .container-data-board {
+    padding: 0;
+  }
+}
+/*-------------------------------- LasT Section --------------------------------*/
+.dashboard-sections .dashboard-last-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+@media (max-width: 1300px) {
+  .dashboard-sections .dashboard-last-section {
+    flex-direction: column;
+    height: 691px;
+  }
+}
+/*-------------------------------- Ashboard Sections Slider --------------------------------*/
+
+@media (max-width: 768px) {
+  .min-none-768 {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .dashboard-sections-sliders {
+    display: none;
+  }
+}
+
+.dashboard-sections .dashboard-sections-sliders {
+  margin: 10% 0;
+}
+
+.dashboard-sections .dashboard-sections-sliders ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-sections .dashboard-sections-sliders li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

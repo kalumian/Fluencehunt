@@ -1,0 +1,111 @@
+.organize_zone .Features {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: auto;
+  & .row {
+    @extend %flex-align-center;
+    justify-content: space-between;
+    margin: 70px 20px;
+    @media (max-width: $l) {
+      flex-direction: column;
+      margin-top: 40px;
+    }
+  }
+  & .reverce {
+    flex-direction: row-reverse;
+  }
+  & .FeaturesImage1 {
+    width: 300px;
+    @media (max-width: $l) {
+      width: 369px;
+      margin-top: 25px;
+    }
+  }
+  & .info {
+    position: relative;
+    @media (max-width: $l) {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    @media (max-width: $s) {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      width: auto;
+    }
+  }
+  & img.deco1 {
+    position: absolute;
+    left: -12%;
+    top: -36%;
+    @media (max-width: $l) {
+      display: none;
+    }
+  }
+  & h2 {
+    margin-bottom: 13px;
+    color: $main-color;
+    @media (max-width: $s) {
+      font-size: 20px;
+    }
+  }
+  & p {
+    font-size: 15px;
+    width: 331px;
+    color: var(--secondary-color);
+    line-height: 21px;
+  }
+  & p {
+    font-size: 15px;
+    width: 331px;
+    color: var(--secondary-color);
+    line-height: 21px;
+  }
+  & ul {
+    list-style: none;
+    margin-top: 16px;
+    margin-left: 23px;
+  }
+  & li {
+    font-size: 13px;
+    margin-bottom: 10px;
+    position: relative;
+    color: var(--secondary-color);
+    &::after {
+      @extend %create-line;
+      display: block;
+      width: 10px;
+      height: 10px;
+      left: -24px;
+      top: 4px;
+      border-radius: 50%;
+      opacity: 0.78;
+      box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+      background-color: $main-color;
+    }
+  }
+  & button {
+    @extend %btn-sec;
+    @extend %flex-align-center;
+    font-weight: 700;
+    width: 135px;
+    height: 25px;
+    margin-top: 15px;
+    justify-content: space-evenly;
+    & i {
+      padding-top: 1px;
+      font-size: 16px;
+    }
+    &:hover {
+      background-color: $secondary-color-hover;
+    }
+  }
+  & .fas {
+    padding-top: 1px;
+    font-size: 21px;
+  }
+}

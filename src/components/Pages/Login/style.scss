@@ -1,0 +1,186 @@
+.Login .content {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 30px 0;
+  @media (max-width: $l) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    @media (max-width: $m) {
+      width: 70%;
+    }
+    @media (max-width: $s) {
+      width: 90%;
+    }
+    & h2 {
+      font-weight: 700;
+      margin: 11px 0;
+      font-size: 24px;
+      text-align: center;
+      color: $secondary-color;
+    }
+    & p {
+      text-align: center;
+      color: $tertiary-color;
+      line-height: 1.6;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    & img {
+      width: 70%;
+    }
+    & span {
+      display: flex;
+      justify-content: space-between;
+      & i {
+        padding: 9px;
+        margin: -4px 4px;
+        box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+        background: #fff;
+        border-radius: 50%;
+        color: $main-color;
+        cursor: pointer;
+        transition: $rate-trans;
+        &:hover {
+          background-color: $text-white-hover;
+        }
+      }
+    }
+  }
+  & .forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    @media (max-width: $l) {
+      margin-bottom: 70px;
+    }
+    @media (max-width: $m) {
+      width: 70%;
+    }
+    @media (max-width: $s) {
+      width: 90%;
+    }
+    & h1 {
+      font-size: 29px;
+      color: $secondary-color;
+      @media (max-width: $s) {
+        text-align: center;
+      }
+    }
+    & p {
+      font-size: 13px;
+      color: $tertiary-color;
+      margin: 10px 0 14px 0;
+      line-height: 21px;
+      @media (max-width: $s) {
+        text-align: center;
+      }
+    }
+    & h2 {
+      display: flex;
+      justify-content: center;
+      font-size: 11px;
+      margin-top: 18px;
+      color: $tertiary-color;
+      & a {
+        padding-left: 9px;
+        color: $main-color;
+        text-decoration: underline $main-color;
+        &:hover {
+          color: $main-color-hover;
+        }
+      }
+    }
+    & .row {
+      margin-top: 17px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      & i {
+        position: absolute;
+        bottom: 17px;
+        left: 13px;
+        font-size: 12px;
+        color: $tertiary-color;
+      }
+    }
+    & input {
+      padding-left: 40px;
+      height: 47px;
+      outline: none;
+      border: 1px solid $main-color;
+      font-size: 17px;
+    }
+    & label {
+      font-size: 12px;
+      margin: 0px 0px 7px 2px;
+    }
+    & .sign-in {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      & button {
+        border-radius: 3px;
+        box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+        background-color: #ffffff;
+        font-weight: 700;
+        background: $main-color;
+        color: white;
+        font-size: 17px;
+        cursor: pointer;
+        text-align: center;
+        border: none;
+        height: 49px;
+        &:hover {
+          background-color: $main-color-hover;
+        }
+      }
+      & .checkbox {
+        justify-content: space-between;
+        display: flex;
+        & p {
+          font-size: 11px;
+          padding-top: 3px;
+          color: $main-color;
+          font-weight: 700;
+          cursor: pointer;
+          &:hover {
+            color: $main-color-hover;
+            text-decoration: underline $main-color;
+          }
+        }
+        & span {
+          justify-content: space-between;
+          display: flex;
+          & p {
+            padding-top: 3px;
+            color: $tertiary-color;
+            margin-left: -5px;
+            font-size: 11px;
+            &:hover {
+              color: $tertiary-color-hover;
+            }
+          }
+        }
+      }
+    }
+    & .c- {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      & span {
+        font-size: 10px;
+        color: $secondary-color;
+      }
+    }
+  }
+}

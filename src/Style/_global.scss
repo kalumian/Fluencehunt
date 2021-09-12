@@ -1,0 +1,29 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "CircularStdBold", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  @extend %title-betwen-sections;
+}
+
+// responsive rote
+$lx: 1200px;
+$l: 992px;
+$m: 768px;
+$s: 576px;

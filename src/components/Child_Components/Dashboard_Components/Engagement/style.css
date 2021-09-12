@@ -1,0 +1,35 @@
+/* Start Engagement */
+.dashboard_item_content .engagement h3,
+.dashboard_item_content .state {
+  font-size: 15px;
+  color: #2d3355;
+  font-weight: 600;
+}
+
+.Dashboard .dashboard-sections .dashboard_item_content .engagement {
+  box-shadow: 0px 0px 12px 0px #0000001c;
+  border-radius: 15px;
+  padding: 40px;
+  background: white;
+}
+
+.dashboard_item_content .engagement .state {
+  margin: 20px 0 14px 0;
+}
+
+@media (max-width: 768px) {
+  .dashboard_item_content .engagement .state {
+    display: none;
+  }
+  .dashboard_item_content .engagement h3 {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .Dashboard.dashboard-sections .dashboard_item_content .engagement {
+    padding: 0;
+  }
+}
+
+/* End Engagement */

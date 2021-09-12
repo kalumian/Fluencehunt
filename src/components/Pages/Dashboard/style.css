@@ -1,0 +1,13 @@
+/*--------------------------------  Middle Page  --------------------------------*/
+.Dashboard .middle-page {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(252, 249, 249);
+  position: relative;
+}
+/*--------------------------------  Pagination Bullet Slider  --------------------------------*/
+
+.Dashboard .swiper-pagination-bullet-active {
+  background-color: var(--main-color) !important;
+  margin-top: 13px;
+}

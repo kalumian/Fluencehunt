@@ -1,0 +1,33 @@
+%title-betwen-sections {
+  line-height: 1.5;
+  text-align: center;
+  font-size: 29px;
+}
+
+%link-main {
+  color: $main-color;
+  transition: $rate-trans;
+  cursor: pointer;
+}
+%link-main-hover {
+  text-decoration: underline $main-color-hover;
+  color: $main-color-hover;
+}
+
+%par-text {
+  font-weight: 600;
+  color: $tertiary-color;
+  line-height: 1.5;
+}
+
+%title-top {
+  text-align: center;
+  font-size: 50px;
+  color: $main-color;
+  text-transform: uppercase;
+}
+%par-top {
+  text-align: center;
+  font-size: 18px;
+  color: $main-color;
+}

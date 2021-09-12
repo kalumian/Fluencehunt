@@ -1,0 +1,56 @@
+// Style
+.Pricing .header {
+  text-align: center;
+  margin: 120px 0;
+
+  & .MuiSwitch-colorPrimary.Mui-checked {
+    color: $main-color !important;
+  }
+  & .MuiSwitch-colorPrimary.Mui-checked + .MuiSwitch-track {
+    background-color: $main-color-hover !important;
+  }
+  & .kind-package {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & p:last-child {
+      color: rgba(0, 0, 0, 0.788);
+      position: relative;
+      & span {
+        border-radius: 13px;
+        font-size: 11px;
+        background: #ffe97a;
+        color: rgb(0, 0, 0);
+        padding: 4px;
+        position: absolute;
+        width: 76px;
+        font-weight: 700;
+        top: -13px;
+        left: 112%;
+      }
+    }
+  }
+  & h1 {
+    font-size: 55px;
+    color: $secondary-color;
+    @media (max-width: $l) {
+      font-size: 50px;
+    }
+  }
+  & p {
+    color: $secondary-color;
+    margin-top: 15px;
+    font-size: 18px;
+  }
+}
+
+.Pricing {
+  & .content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+
+// import style component
+@import "../../Child_Components/Pricing_Components/style.scss";

@@ -1,0 +1,64 @@
+.Home .Features {
+  margin: auto;
+  width: 80%;
+  & .title {
+    margin-bottom: 10px;
+    margin-top: 80px;
+  }
+  & .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    position: relative;
+    @media (max-width: $m) {
+      box-shadow: 3px 3px 10px 0 rgb(0 0 0 / 16%);
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      padding: 20px 0;
+    }
+  }
+  & img {
+    width: 310px;
+    @media (max-width: $m) {
+      display: none;
+    }
+  }
+  & .icon1 {
+    width: 100px;
+    position: absolute;
+    top: -64px;
+    left: -64px;
+  }
+  & .icon2 {
+    width: 45px;
+    position: absolute;
+    top: -42px;
+    left: -44px;
+  }
+  & .icon3 {
+    width: 48px;
+    position: absolute;
+    top: -50px;
+    left: -45px;
+  }
+  & .info h3 {
+    color: $main-color;
+    margin-bottom: 13px;
+    font-size: 24px;
+  }
+  & .info p {
+    line-height: 1.4;
+    color: $secondary-color;
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+  & .info a {
+    @extend %link-main;
+    font-size: 12px;
+    font-weight: 600;
+    &:hover {
+      @extend %link-main-hover;
+    }
+  }
+}

@@ -1,0 +1,187 @@
+.Header {
+  & .container {
+    height: 150px;
+    @extend %flex-align-center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    & nav {
+      width: 90%;
+      @extend %flex-align-center;
+      justify-content: space-between;
+      @media (max-width: $m) {
+        display: none;
+      }
+      & ul {
+        display: flex;
+        justify-content: flex-start;
+        & li {
+          padding: 32px;
+          position: relative;
+          cursor: pointer;
+          color: $main-color;
+          &::before {
+            @extend %create-line;
+            transition: 0.4s;
+            left: 20%;
+            width: 0%;
+            background-color: $main-color;
+          }
+          &:hover {
+            &::before {
+              width: 60%;
+            }
+          }
+          & a,
+          span {
+            color: $main-color;
+            font-size: 18px;
+            font-weight: 700;
+          }
+          & a {
+            @media (max-width: $l) {
+              font-size: 16px;
+            }
+          }
+          @media (max-width: $l) {
+            padding: 19px;
+          }
+        }
+        & .dropdown-nav {
+          @extend %DropDown-list;
+          color: $main-color;
+          left: 40%;
+          top: 84px;
+          box-shadow: 0 0 6px 0px #0000000d;
+          & li {
+            padding: 15px 50px;
+            background-color: white;
+            transition: 0.3s;
+            z-index: 10;
+            &:hover {
+              background-color: $main-color;
+              & a {
+                color: white;
+              }
+              &::before {
+                width: 0%;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .fa-chevron-down,
+    .fa-chevron-up {
+      padding: 3px 0 0 4px;
+      color: var(--tertiary-color);
+    }
+    & .logo-Header img {
+      @media (max-width: $m) {
+        width: 80%;
+      }
+    }
+    & .dropdown-button {
+      display: block;
+      width: 33px;
+      height: 2px;
+      background: $main-color;
+      position: relative;
+
+      &::before,
+      &::after {
+        @extend %after-default;
+        background-color: $main-color;
+        width: 100%;
+        height: 2px;
+      }
+      &::before {
+        margin-top: -10px;
+      }
+      &::after {
+        margin-top: 10px;
+      }
+      @media (min-width: $m) {
+        display: none;
+      }
+    }
+  }
+  & button {
+    @extend %btn-sec;
+    font-size: 19px;
+    width: 180px;
+    height: 50px;
+
+    &:hover {
+      background-color: $secondary-color-hover;
+    }
+    @media (max-width: $l) {
+      font-size: 18px;
+      width: 158px;
+      height: 50px;
+    }
+    @media (max-width: $m) {
+      font-size: 18px;
+      width: 158px;
+      height: 50px;
+    }
+    @media (max-width: $m) {
+      margin-top: 5px;
+      width: 140px;
+      height: 39px;
+      font-size: 17px;
+    }
+  }
+  & .dropdown {
+    position: relative;
+
+    & ul {
+      @extend %flex-column-align-center;
+      width: 100%;
+      box-shadow: 0px 12px 20px 3px #0000000f;
+      justify-content: space-around;
+      & li {
+        padding: 19px;
+        @extend %flex-column-align-center;
+        margin-top: 15px;
+        padding-bottom: 20px;
+        width: 100%;
+        justify-content: space-around;
+        list-style: none;
+        text-align: center;
+        & ul {
+          & li {
+            border: 1px solid whitesmoke;
+            text-align: center;
+            transition: 0.4s;
+
+            & a {
+              color: $main-color;
+              font-size: 18px;
+              font-weight: 700;
+            }
+
+            &:hover {
+              background-color: $main-color;
+              & a {
+                color: #ffff;
+              }
+            }
+          }
+        }
+        & a,
+        span {
+          color: $main-color;
+          font-size: 18px;
+          font-weight: 700;
+        }
+      }
+    }
+    & button {
+      margin-bottom: 20px;
+    }
+    @media (min-width: $m) {
+      display: none;
+    }
+  }
+}

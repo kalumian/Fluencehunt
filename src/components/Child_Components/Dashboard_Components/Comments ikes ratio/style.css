@@ -1,0 +1,16 @@
+.dashboard_item_content .comments-likes-ratio {
+  padding: 90px;
+}
+
+.Dashboard .dashboard-sections .dashboard_item_content .comments-likes-ratio {
+  box-shadow: 0px 0px 12px 0px #0000001c;
+  border-radius: 15px;
+  padding: 40px;
+  background: white;
+}
+
+@media (max-width: 450px) {
+  .Dashboard .dashboard-sections .dashboard_item_content .comments-likes-ratio {
+    padding: 0;
+  }
+}

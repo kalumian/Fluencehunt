@@ -1,0 +1,28 @@
+/* Start audience */
+
+.audience-data-board {
+  margin-top: 50px;
+}
+.Dashboard .dashboard-sections .dashboard_item_content .audience {
+  box-shadow: 0px 0px 12px 0px #0000001c;
+  border-radius: 15px;
+  padding: 80px;
+  background: white;
+}
+@media (max-width: 768px) {
+  .audience-data-board {
+    margin-top: 20px;
+  }
+  .Dashboard .dashboard-sections .dashboard_item_content .audience {
+    padding: 40px;
+  }
+}
+@media (max-width: 450px) {
+  .audience-data-board {
+    margin-top: 10px;
+  }
+  .Dashboard .dashboard-sections .dashboard_item_content .audience {
+    padding: 0;
+  }
+}
+/* End audience */

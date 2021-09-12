@@ -1,0 +1,21 @@
+$rate-hover-color: 5%;
+$rate-trans: 0.4s;
+// --------------------
+$main-color: #3fe893;
+$main-color-hover: lighten($main-color, $rate-hover-color);
+// --------------------
+
+$secondary-color: #2e3359;
+$secondary-color-hover: lighten($secondary-color, $rate-hover-color);
+// --------------------
+
+$tertiary-color: #636465db;
+$tertiary-color-hover: lighten($tertiary-color, $rate-hover-color);
+// --------------------
+
+$dark-color: #161c27;
+$dark-color-hover: lighten($dark-color, $rate-hover-color);
+// --------------------
+
+$text-white: #fff;
+$text-white-hover: darken($text-white, $rate-hover-color * 2);

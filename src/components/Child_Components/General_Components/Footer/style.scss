@@ -1,0 +1,57 @@
+.Footer {
+  background-color: $secondary-color;
+  padding: 70px 0;
+
+  & .contaonrt-footer {
+    max-width: 1170px;
+    margin: auto;
+  }
+
+  & .row {
+    @extend %flex-wrap;
+  }
+
+  & .footer-col {
+    width: 20%;
+    padding: 0 15px;
+    & .social-links a {
+      @extend %circle;
+      line-height: 40px;
+      background: $main-color;
+      display: inline-block;
+      margin: 0px 10px 10px 0;
+      height: 40px;
+      width: 40px;
+      font-size: 19px;
+      transition: $rate-trans;
+      &:hover {
+        background-color: $text-white;
+        color: $main-color;
+      }
+    }
+    @media (max-width: $m) {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+  & h3 {
+    color: $main-color;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  & h3:last-child {
+    color: $text-white;
+  }
+
+  & a {
+    color: $text-white;
+    &:hover {
+      color: $text-white-hover;
+    }
+  }
+  & li {
+    padding: 5px 0;
+    font-size: 14px;
+  }
+}

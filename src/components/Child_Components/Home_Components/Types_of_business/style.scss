@@ -1,0 +1,92 @@
+.Home .Types_of_business {
+  text-align: center;
+  margin-bottom: 60px;
+
+  & .title {
+    color: $main-color;
+    margin-top: 25px;
+    @media (max-width: $s) {
+      padding: 0 25px;
+    }
+  }
+  & .cards {
+    @extend %flex-just-center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    @media (max-width: $l) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  & .card {
+    width: 305px;
+    height: 360px;
+    position: relative;
+    text-align: center;
+    box-shadow: -8px 8px 11px 0 rgba(0, 0, 0, 0.18);
+    background-color: $main-color;
+    @media (max-width: $l) {
+      width: 401px;
+      height: 410px;
+    }
+    @media (max-width: $s) {
+      width: 320px;
+      height: 350px;
+    }
+    &:last-child {
+      z-index: 2;
+      @media (max-width: $l) {
+        border-radius: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 50px;
+      }
+    }
+    &:nth-child(2) {
+      z-index: 1;
+      border-radius: 10px 0 0px 10px;
+      background-color: var(--tertiary-color);
+      margin-left: -10px;
+      margin-right: -15px;
+      @media (max-width: $l) {
+        margin-top: 50px;
+      }
+    }
+    & h3 {
+      color: white;
+      margin-top: 55px;
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+    & p {
+      padding: 0px 35px;
+      color: white;
+      text-transform: inherit;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-top: 32px;
+    }
+  }
+  & .line {
+    display: block;
+    background: white;
+    width: 40%;
+    height: 3px;
+    margin: auto auto 35px auto;
+  }
+  & button {
+    @extend %btn-main;
+    width: 123px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 40px;
+    &:hover {
+      background-color: $main-color-hover;
+    }
+  }
+  & .title {
+    color: $main-color;
+    margin-top: 25px;
+  }
+}

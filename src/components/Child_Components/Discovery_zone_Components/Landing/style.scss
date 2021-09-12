@@ -1,0 +1,17 @@
+.Discovery_zone .Landing {
+  text-align: center;
+  & img {
+    width: 50%;
+    margin-top: 20px;
+  }
+  & h1 {
+    @extend %title-top;
+    margin-top: 20px;
+  }
+  & p {
+    text-align: center;
+    margin-top: 13px;
+    font-size: 18px;
+    color: var(--main-color);
+  }
+}

@@ -1,0 +1,52 @@
+.Discovery_zone .advertisement {
+  margin-top: 30px;
+  @media (max-width: $m) {
+    margin-top: 5px;
+  }
+  @extend %flex-column-align-center;
+  & p {
+    color: var(--secondary-color);
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 17px;
+    line-height: 1.7;
+    @media (max-width: $l) {
+      font-size: 15px;
+    }
+  }
+  & h2 {
+    margin-top: 60px;
+  }
+  & .image {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+  }
+  & img.dashboard {
+    @media (max-width: $l) {
+      width: 65%;
+    }
+    @media (max-width: $m) {
+      margin-top: 90%;
+    }
+  }
+  & .circle1 {
+    position: absolute;
+    left: -35%;
+    top: -16%;
+    width: 54%;
+  }
+  & .circle2 {
+    position: absolute;
+    right: 4%;
+    top: 30%;
+    width: 6%;
+  }
+
+  & h2.title {
+    margin-bottom: 0px;
+    font-size: 19px;
+    padding: 0 15px;
+  }
+}

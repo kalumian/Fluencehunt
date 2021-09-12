@@ -1,0 +1,24 @@
+// import global
+@import "global";
+
+// import general styles
+@import "space";
+@import "var";
+@import "text";
+@import "shortcut";
+@import "buttons";
+
+// import component style
+@import "../components/Child_Components/General_Components/Header/style.scss";
+@import "../components/Child_Components/General_Components/Footer/style.scss";
+@import "../components/Pages/Home/style.scss";
+@import "../components/Pages/Analyse_zone/style.scss";
+@import "../components/Pages/Discovery_zone/style.scss";
+@import "../components/Pages/Organize_Zone/style.scss";
+@import "../components/Pages/Payment/style.scss";
+@import "../components/Pages/Pricing/style.scss";
+@import "../components/Pages/Login/style.scss";
+@import "../components/Pages/Sign_up_step1/style.scss";
+@import "../components/Pages/Sign_up_step2/style.scss";
+@import "../components/Pages/Coming_Soon/style.scss";
+@import "../components/Pages/Dashboard/style.scss";

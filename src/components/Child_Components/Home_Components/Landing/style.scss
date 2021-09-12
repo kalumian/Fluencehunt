@@ -1,0 +1,93 @@
+.Home .Landing {
+  @extend %flex-just-center;
+  flex-direction: row-reverse;
+
+  @media (max-width: $l) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  & .image {
+    width: 49%;
+    @media (max-width: $l) {
+      display: none;
+    }
+    & img {
+      width: 100%;
+    }
+  }
+
+  & .title-landing {
+    @extend %flex-center;
+    width: 49%;
+    flex-direction: column;
+    @media (max-width: $m) {
+      width: 100%;
+    }
+    & h1 {
+      margin: 0 0 10px 0;
+      font-size: 45px;
+      color: $secondary-color;
+      @media (max-width: $m) {
+        font-size: 40px;
+        text-align: center;
+      }
+    }
+    & p {
+      color: $tertiary-color;
+      font-size: 17px;
+      font-weight: 500;
+      margin-top: 13px;
+      line-height: 1.5;
+      @media (max-width: $m) {
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    & br {
+      @media (max-width: $m) {
+        display: none;
+      }
+    }
+  }
+
+  & .buttons {
+    @extend %flex-just-left;
+    margin-top: 35px;
+    @media (max-width: $m) {
+      width: auto;
+      height: auto;
+    }
+    @media (max-width: $s) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    & button {
+      @extend %btn-sec;
+      width: 160px;
+      height: 40px;
+      &:first-child {
+        font-size: 17px;
+        margin-right: 60px;
+        @media (max-width: $s) {
+          margin-right: 0px;
+          margin-bottom: 16px;
+        }
+      }
+      &:last-child {
+        font-weight: 600;
+        font-size: 15px;
+        box-shadow: 0 6px 30px 0 rgb(0 0 0 / 8%);
+        background-color: $text-white;
+        color: $main-color;
+        &:hover {
+          background-color: $text-white-hover;
+        }
+      }
+    }
+  }
+}

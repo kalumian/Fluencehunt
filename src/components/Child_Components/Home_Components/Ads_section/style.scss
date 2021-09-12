@@ -1,0 +1,117 @@
+.Home .Ads_section {
+  margin-bottom: 100px;
+
+  & .title {
+    margin-top: 40px;
+    margin-bottom: 5px;
+  }
+
+  & .cards {
+    @extend %flex-wrap;
+    margin: auto;
+    width: 84%;
+    justify-content: space-around;
+  }
+
+  & .card {
+    margin-top: 115px;
+    width: 470px;
+    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    @media (max-width: $m) {
+      width: 370px;
+      margin-top: 40px;
+    }
+    @media (max-width: $s) {
+      width: 320px;
+    }
+    & .deco_image1 {
+      position: absolute;
+      top: -19%;
+      left: -17%;
+      width: 24%;
+      @media (max-width: $m) {
+        display: none;
+      }
+    }
+    & .deco_image2 {
+      position: absolute;
+      top: -21%;
+      right: -18%;
+      width: 24%;
+      @media (max-width: $m) {
+        display: none;
+      }
+    }
+  }
+
+  & .main-image {
+    width: 90%;
+    margin-top: 15px;
+  }
+
+  & h3 {
+    font-size: 24px;
+    color: $secondary-color;
+    margin-top: 18px;
+  }
+
+  & p {
+    margin-top: 18px;
+    color: $secondary-color;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  & ul {
+    @extend %flex-just-center;
+    margin-top: 30px;
+  }
+
+  & li {
+    @extend %flex-column-align-center;
+    margin: 0 7px;
+    color: $secondary-color;
+    width: 77px;
+    font-weight: 600;
+    justify-content: space-between;
+    font-size: 14px;
+    & img {
+      margin-bottom: 25px;
+      width: 39%;
+    }
+    @media (max-width: $s) {
+      font-size: 12px;
+    }
+  }
+  .buttons {
+    @extend %flex-center;
+    flex-direction: column;
+    margin-top: 44px;
+    & span {
+      @extend %link-main;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      &:hover {
+        @extend %link-main-hover;
+      }
+    }
+    button {
+      @extend %btn-dark;
+      width: 105px;
+      height: 35px;
+      margin-bottom: 15px;
+      font-size: 13px;
+      background-color: $dark-color;
+      &:hover {
+        background-color: $dark-color-hover;
+      }
+    }
+  }
+  & .under {
+    height: 0;
+  }
+}

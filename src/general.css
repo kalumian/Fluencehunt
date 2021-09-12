@@ -1,0 +1,61 @@
+/* Start Variables */
+:root {
+  --main-color: #3fe893;
+  --secondary-color: #636465db;
+  --tertiary-color: #2e3359;
+}
+/* End Variables */
+
+/* Glebal Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "CircularStdBold", sans-serif;
+}
+
+.none-style-list {
+  list-style: none;
+}
+
+
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+
+h2.title {
+  text-align: center;
+  font-size: 29px;
+  color: var(--tertiary-color);
+  margin-bottom: 30px;
+}
+.main-button {
+  border: none;
+  outline: none;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+  width: 120px;
+  height: 33px;
+  margin: 40px 0;
+  color: white;
+  background: var(--main-color);
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.main-button:hover {
+  background: #ffff;
+  color: #3fe894;
+  border: 1px solid var(--main-color);
+}

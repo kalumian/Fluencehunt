@@ -1,0 +1,64 @@
+// Flex
+%flex-align-center {
+  display: flex;
+  align-items: center;
+}
+%flex-column-align-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flex-just-center{
+  display: flex;
+  justify-content: center;
+}
+
+%flex-just-left{
+  display: flex;
+  justify-content: left;
+}
+
+%flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+// After & Befor => Line
+
+%create-line {
+  content: "";
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+}
+
+%after-default {
+  content: "";
+  position: absolute;
+}
+
+// Drop Down
+
+%DropDown-list {
+  flex-direction: column;
+  display: flex;
+  position: absolute;
+}
+
+
+//  Circle
+
+%circle {
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+}
+

@@ -1,0 +1,15 @@
+.Analyse_zone .Landing {
+  text-align: center;
+  & img {
+    width: 50%;
+    margin-top: 20px;
+  }
+  & h1 {
+    @extend %title-top;
+    margin-top: 20px;
+  }
+  & p {
+    @extend %par-top;
+    margin-top: 13px;
+  }
+}
